@@ -19,7 +19,7 @@ import {
   // join,
   resolve
 } from 'path';
-import svgr from 'vite-plugin-svgr';
+// import svgr from 'vite-plugin-svgr';
 // import { } from 'vite-plugin-svg-icons';
 // import svgLoader from 'vite-svg-loader';
 // import reactSvgPlugin from 'vite-plugin-react-svg';
@@ -54,25 +54,25 @@ export default defineConfig({
   'base': '/', // 'base': './'
   'plugins': [
     react(),
-    svgr({
-      svgrOptions: {
-        icon: true,
-        ref: true,
-        titleProp: true,
-        descProp: true,
-        expandProps: true,
-        dimensions: true,
-        // native: true,
-        runtimeConfig: true,
-        // typescript: true,
-        prettier: true,
-        svgo: true,
-        memo: true,
-        index: true,
-      },
-      exportAsDefault: true
-      // 这里可以添加SVGR的选项
-    }),
+    // svgr({
+    //   svgrOptions: {
+    //     icon: true,
+    //     ref: true,
+    //     titleProp: true,
+    //     descProp: true,
+    //     expandProps: true,
+    //     dimensions: true,
+    //     // native: true,
+    //     runtimeConfig: true,
+    //     // typescript: true,
+    //     prettier: true,
+    //     svgo: true,
+    //     memo: true,
+    //     index: true,
+    //   },
+    //   exportAsDefault: true
+    //   // 这里可以添加SVGR的选项
+    // }),
     // svgLoader({
     //   svgoConfig: {
     //     multipass: true,
