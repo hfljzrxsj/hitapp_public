@@ -26,7 +26,7 @@ import {
 // //vitejs.dev/config/
 const serverOptions = {
   'host': true,
-  'open': true,
+  'open': false,
   'cors': true,
   'https': false,
   // 'strictPort': true, // 若端口已被占用则会直接退出
