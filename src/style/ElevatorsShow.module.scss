@@ -1,0 +1,26 @@
+.ElevatorsShow {
+  display: flex;
+}
+
+.EachelevatorsShow {
+  display: flex;
+  padding: 1em;
+  justify-content: space-evenly;
+  flex-direction: column;
+
+  & > div {
+    padding: 1em;
+
+    > div {
+      padding: 1em;
+
+      > div {
+        padding: .5em;
+      }
+    }
+  }
+}
+
+.InputLabel {
+  background-color: white;
+}
