@@ -29,6 +29,7 @@ const serverOptions = {
   'open': false,
   'cors': true,
   'https': false,
+  port:3000,
   // 'strictPort': true, // 若端口已被占用则会直接退出
   'proxy': {
     '/api': {
