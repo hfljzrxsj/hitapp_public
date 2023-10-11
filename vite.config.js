@@ -10,7 +10,7 @@ import {
   // ,transformWithEsbuild
 } from 'vite';
 // import externalGlobals from 'rollup-plugin-external-globals';
-import { Plugin as importToCDN } from 'vite-plugin-cdn-import';
+// import { Plugin as importToCDN } from 'vite-plugin-cdn-import';
 // import _default from 'vite-plugin-cdn';
 // import react from '@vitejs/plugin-react';
 import react from '@vitejs/plugin-react-swc';
@@ -120,92 +120,92 @@ export default defineConfig({
     //   titleProp: false,
     // }),
     // eslint-disable-next-line @typescript-eslint/no-unsafe-call
-    importToCDN({
-      'modules': [
-        {
-          'name': 'react',
-          'var': 'React',
-          'path': '//cdn.bootcdn.net/ajax/libs/react/18.2.0/umd/react.production.min.js'
-          // 'path': 'https://cdn.bootcdn.net/ajax/libs/react/18.2.0/umd/react.development.js'
-        },
-        {
-          'name': 'react-dom',
-          'var': 'ReactDOM',
-          'path': '//cdn.bootcdn.net/ajax/libs/react-dom/18.2.0/umd/react-dom.production.min.js'
-          // 'path': 'https://cdn.bootcdn.net/ajax/libs/react-dom/18.2.0/umd/react-dom.production.min.js'
-          // 'path': 'https://cdn.bootcdn.net/ajax/libs/react-dom/18.2.0/umd/react-dom.development.js'
-          // 'path': 'https://cdn.bootcdn.net/ajax/libs/react-dom/18.2.0/umd/react-dom.development.min.js'
-        },
-        {
-          'name': '@mui/material',
-          'var': 'MaterialUI',
-          'path': '//cdn.bootcdn.net/ajax/libs/material-ui/4.12.4/umd/material-ui.production.min.js'
-          // 'path': 'https://cdn.bootcdn.net/ajax/libs/material-ui/4.12.4/umd/material-ui.development.js'
-          // 'path': '//unpkg.com/@material-ui/core/umd/material-ui.production.min.js'
-        },
-        {
-          'name': 'redux',
-          'var': 'Redux',
-          'path': '//cdn.bootcdn.net/ajax/libs/redux/4.2.1/redux.min.js'
-        },
-        {
-          'name': 'react-redux',
-          'var': 'ReactRedux',
-          'path': '//cdn.bootcdn.net/ajax/libs/react-redux/8.0.5/react-redux.min.js'
-        },
-        {
-          'name': 'redux-thunk',
-          'var': 'ReduxThunk',
-          'path': '//cdn.bootcdn.net/ajax/libs/redux-thunk/2.4.2/redux-thunk.min.js'
-        },
-        {
-          'name': 'axios',
-          'var': 'axios',
-          'path': '//cdn.bootcdn.net/ajax/libs/axios/1.3.6/axios.min.js'
-        },
-        {
-          'name': 'prop-types',
-          'var': 'PropTypes',
-          'path': '//cdn.bootcdn.net/ajax/libs/prop-types/15.8.1/prop-types.min.js'
-        },
-        {
-          'name': 'react-transition-group',
-          'var': 'ReactTransitionGroup',
-          'path': '//cdn.bootcdn.net/ajax/libs/react-transition-group/4.4.5/react-transition-group.min.js'
-        }
+    // importToCDN({
+    //   'modules': [
+    //     {
+    //       'name': 'react',
+    //       'var': 'React',
+    //       'path': '//cdn.bootcdn.net/ajax/libs/react/18.2.0/umd/react.production.min.js'
+    //       // 'path': 'https://cdn.bootcdn.net/ajax/libs/react/18.2.0/umd/react.development.js'
+    //     },
+    //     {
+    //       'name': 'react-dom',
+    //       'var': 'ReactDOM',
+    //       'path': '//cdn.bootcdn.net/ajax/libs/react-dom/18.2.0/umd/react-dom.production.min.js'
+    //       // 'path': 'https://cdn.bootcdn.net/ajax/libs/react-dom/18.2.0/umd/react-dom.production.min.js'
+    //       // 'path': 'https://cdn.bootcdn.net/ajax/libs/react-dom/18.2.0/umd/react-dom.development.js'
+    //       // 'path': 'https://cdn.bootcdn.net/ajax/libs/react-dom/18.2.0/umd/react-dom.development.min.js'
+    //     },
+    //     {
+    //       'name': '@mui/material',
+    //       'var': 'MaterialUI',
+    //       'path': '//cdn.bootcdn.net/ajax/libs/material-ui/4.12.4/umd/material-ui.production.min.js'
+    //       // 'path': 'https://cdn.bootcdn.net/ajax/libs/material-ui/4.12.4/umd/material-ui.development.js'
+    //       // 'path': '//unpkg.com/@material-ui/core/umd/material-ui.production.min.js'
+    //     },
+    //     {
+    //       'name': 'redux',
+    //       'var': 'Redux',
+    //       'path': '//cdn.bootcdn.net/ajax/libs/redux/4.2.1/redux.min.js'
+    //     },
+    //     {
+    //       'name': 'react-redux',
+    //       'var': 'ReactRedux',
+    //       'path': '//cdn.bootcdn.net/ajax/libs/react-redux/8.0.5/react-redux.min.js'
+    //     },
+    //     {
+    //       'name': 'redux-thunk',
+    //       'var': 'ReduxThunk',
+    //       'path': '//cdn.bootcdn.net/ajax/libs/redux-thunk/2.4.2/redux-thunk.min.js'
+    //     },
+    //     {
+    //       'name': 'axios',
+    //       'var': 'axios',
+    //       'path': '//cdn.bootcdn.net/ajax/libs/axios/1.3.6/axios.min.js'
+    //     },
+    //     {
+    //       'name': 'prop-types',
+    //       'var': 'PropTypes',
+    //       'path': '//cdn.bootcdn.net/ajax/libs/prop-types/15.8.1/prop-types.min.js'
+    //     },
+    //     {
+    //       'name': 'react-transition-group',
+    //       'var': 'ReactTransitionGroup',
+    //       'path': '//cdn.bootcdn.net/ajax/libs/react-transition-group/4.4.5/react-transition-group.min.js'
+    //     }
 
-        // {
-        //   'name': 'react/react-jsx-runtime',
-        //   'var': 'ReactJsxRuntime',
-        //   'path': '//cdn.bootcdn.net/ajax/libs/react/18.2.0/cjs/react-jsx-runtime.production.min.js'
-        // },
-        // {
-        //   'name': 'object-assign',
-        //   'var': 'ObjectAssign',
-        //   'path': '//unpkg.com/object-assign@4.1.1/index.js'
-        // },
-        // {
-        //   'name': 'react-is',
-        //   'var': 'react-is',
-        //   'path': '//cdn.bootcdn.net/ajax/libs/react-is/18.2.0/umd/react-is.production.min.js'
-        // },
-        // {
-        //   'name': '@popperjs',
-        //   'var': 'Popper',
-        //   'path': '//cdn.bootcdn.net/ajax/libs/popper.js/2.11.7/umd/popper.js'
-        // },
-        // {
-        //   'name': '@emotion',
-        //   'var': 'emotion',
-        //   'path': '//cdn.bootcdn.net/ajax/libs/babel-standalone/7.21.4/babel.min.js'
-        // },
-        // {
-        //   'name': '@babel',
-        //   'var': 'babel',
-        //   'path': '//cdn.bootcdn.net/ajax/libs/babel-standalone/7.21.4/babel.min.js'
-        // },
-      ]
-    }),
+    //     // {
+    //     //   'name': 'react/react-jsx-runtime',
+    //     //   'var': 'ReactJsxRuntime',
+    //     //   'path': '//cdn.bootcdn.net/ajax/libs/react/18.2.0/cjs/react-jsx-runtime.production.min.js'
+    //     // },
+    //     // {
+    //     //   'name': 'object-assign',
+    //     //   'var': 'ObjectAssign',
+    //     //   'path': '//unpkg.com/object-assign@4.1.1/index.js'
+    //     // },
+    //     // {
+    //     //   'name': 'react-is',
+    //     //   'var': 'react-is',
+    //     //   'path': '//cdn.bootcdn.net/ajax/libs/react-is/18.2.0/umd/react-is.production.min.js'
+    //     // },
+    //     // {
+    //     //   'name': '@popperjs',
+    //     //   'var': 'Popper',
+    //     //   'path': '//cdn.bootcdn.net/ajax/libs/popper.js/2.11.7/umd/popper.js'
+    //     // },
+    //     // {
+    //     //   'name': '@emotion',
+    //     //   'var': 'emotion',
+    //     //   'path': '//cdn.bootcdn.net/ajax/libs/babel-standalone/7.21.4/babel.min.js'
+    //     // },
+    //     // {
+    //     //   'name': '@babel',
+    //     //   'var': 'babel',
+    //     //   'path': '//cdn.bootcdn.net/ajax/libs/babel-standalone/7.21.4/babel.min.js'
+    //     // },
+    //   ]
+    // }),
     // {
     //   name: 'treat-js-files-as-jsx',
     //   async transform (code, id) {
